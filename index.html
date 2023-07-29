@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Observatory</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <!-- <div class="background">
+        <img src="./images/bg-main.jpeg">
+    </div> -->
+    <video class="background" preload="true" muted autoplay loop>
+        <source src="./assets/bg-main.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <div class="input-block">
+            <input type="text" id="inputBody" placeholder="Type your space body...">
+            <button id="sendRequestBtn">Find</button>
+        </div>
+        <div class="mini-observatory">
+            <div class="body-data">
+                <div class="body-name"><span id="bodyName">Unknown</span></div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Temperature:</td>
+                            <td><span id="bodyTemp">-</span></td>
+                        </tr>
+                        <tr>
+                            <td>Inclination:</td>
+                            <td><span id="bodyInclination">-</span></td>
+                        </tr>
+                        <tr>
+                            <td>Density:</td>
+                            <td><span id="bodyDensity">-</span></td>
+                        </tr>
+                        <tr>
+                            <td>Gravity:</td>
+                            <td><span id="bodyGravity">-</span></td>
+                        </tr>
+                        <tr>
+                            <td>Mass:</td>
+                            <td><span id="bodyMass">-</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="moons-data">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

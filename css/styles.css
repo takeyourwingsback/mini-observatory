@@ -1,0 +1,79 @@
+body {
+    padding-top: 55px;
+    position: relative;
+    overflow-y: hidden;
+    background-color: rgb(19, 17, 17);
+}
+.background {
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0; left: 0;
+    filter: blur(20px) saturate(40%);
+}
+.container {
+    position: relative;
+}
+
+.input-block {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.input-block input {
+    max-width: 33ch;
+    background-color: rgba(33, 33, 33, .9);
+    color: #1589ef;
+    padding: .5em 1em;
+    font-size: 1rem;
+    border-radius: 10px 0 10px 0;
+}
+.input-block input::placeholder {
+    color: rgba(64, 158, 240, 0.7);
+    font-style: italic;
+}
+.input-block input:focus {
+    background-color: rgba(33, 33, 33, .7);
+}
+.input-block button {
+    background-color: rgba(14, 116, 179, .5);
+    color: #fff;
+    font-size: .9rem;
+    padding: .5em .7em;
+    border-radius: 10px 0 10px 0px;
+    cursor: pointer;
+    transition: background-color .25s ease-in-out;
+}
+.input-block button:hover {
+    background-color: #195479;
+}
+
+.mini-observatory {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    color: #84b0f2;
+    background-color: rgba(35, 1, 1, .6);
+    border-radius: 3px;
+    font-size: 1.5rem;
+}
+.body-data {
+    font-size: 1.2rem;
+}
+.body-name {
+    margin-bottom: 1em;
+    font-size: 2rem;
+    color: #d8d1fd;
+}
+.body-data table {
+    margin-left: 25px;
+}
+.body-data table td {
+    padding-left: 50px;
+}
+.body-data table td:first-child {
+    padding-left: 0;
+}
+.body-data table tr {
+    line-height: 1.35em;
+}
